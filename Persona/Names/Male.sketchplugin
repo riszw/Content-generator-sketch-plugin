@@ -1,7 +1,7 @@
 //
 
 #import '../utility.js'
-#import '../loadText.js'
+#import '../loadNames.js'
 #import '../data/Names/names.json'
 
 firstNames = data[22][1];
