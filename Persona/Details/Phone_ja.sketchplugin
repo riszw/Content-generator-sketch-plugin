@@ -1,0 +1,5 @@
+#import '../utility.js'
+#import '../loadText.js'
+#import '../data/persona/phones_ja.js'
+
+loadText(data, 'Phone_ja');
