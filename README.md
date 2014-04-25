@@ -18,12 +18,6 @@ Add Generator folder to the plugin folder `/Library/Application Support/com.bohe
 
 ##Automatic updates (aka better way to install)
 Easiest way to get updates for all your sketch plugins (that are hosted in github) is to use github client, follow these simple steps:
-<<<<<<< HEAD
-1. Download beautiful gihub app https://mac.github.com/
-2. Add plugin using “Clone in Desktop” button and the github app will proceed from there
-![Clone button](https://raw.githubusercontent.com/timuric/Content-generator-for-sketch-app/master/tutorial/clone.png)
-3. In github app Specify your plugin directory as destination
-=======
 
 1. Download beautiful gihub app https://mac.github.com/
 
@@ -33,7 +27,6 @@ Easiest way to get updates for all your sketch plugins (that are hosted in githu
 3. In github app Specify your plugin directory as destination by pressing CMD+SHIFT+G, then paste your plugin folder path
 ![Paste path](https://raw.githubusercontent.com/timuric/Content-generator-for-sketch-app/master/tutorial/path.png)
 
->>>>>>> upstream/master
 4. To get updates simply click "Sync branch"
 ![Clone button](https://raw.githubusercontent.com/timuric/Content-generator-for-sketch-app/master/tutorial/sync.png)
 
