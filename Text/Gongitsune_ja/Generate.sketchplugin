@@ -1,5 +1,5 @@
 #import '../js/utility.js'
 #import '../js/loadText.js'
-#import '../data/persona/phones_ja.js'
+#import '../data/text/gongitsune_ja.js'
 
 loadText(data);
