@@ -2,4 +2,4 @@
 #import '../js/loadText.js'
 #import '../data/text/lorem.js'
 
-loadText(data, 'lorem text');
+loadText(data);

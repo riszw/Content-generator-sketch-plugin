@@ -2,4 +2,4 @@
 #import '../js/loadText.js'
 #import '../data/text/fillerati.js'
 
-loadText(data, 'fillerati text');
+loadText(data);

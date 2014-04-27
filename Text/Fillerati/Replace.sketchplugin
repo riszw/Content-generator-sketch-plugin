@@ -2,4 +2,4 @@
 #import '../js/replaceTextFitting.js'
 #import '../data/text/hipsum.js'
 
-loadText(data, 'hipsum text');
+loadText(data);

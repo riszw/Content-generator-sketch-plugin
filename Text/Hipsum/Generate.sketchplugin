@@ -2,4 +2,4 @@
 #import '../js/loadText.js'
 #import '../data/text/hipsum.js'
 
-loadText(data, 'hipsum text');
+loadText(data);
