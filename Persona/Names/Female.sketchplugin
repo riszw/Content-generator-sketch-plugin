@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 //
 
 #import '../utility.js'
 #import '../loadNames.js'
 #import '../data/Names/names.json'
+=======
+#import '../js/utility.js'
+#import '../js/loadNames.js'
+#import '../data/names/names.js'
+>>>>>>> remotes/fork_master/master
 
 firstNames = data[22][2];
 lastNames = data[22][3];
