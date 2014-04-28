@@ -1,0 +1,5 @@
+#import '../js/utility.js'
+#import '../js/replaceTextFitting_ja.js'
+#import '../data/text/japan/kumonoito.js'
+
+loadText(data);
