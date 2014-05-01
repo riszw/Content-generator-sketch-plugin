@@ -2,6 +2,6 @@
 #import '../js/loadNames.js'
 #import '../data/names/names.js'
 
-firstNames = data[23][1];
-lastNames = data[23][3];
+firstNames = data[15][1];
+lastNames = data[15][3];
 loadText(lastNames, firstNames);
