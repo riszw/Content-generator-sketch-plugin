@@ -2,4 +2,4 @@
 #import '../js/loadText.js'
 #import '../data/persona/phones.js'
 
-loadText(data);
+loadText(data, 'phone number');

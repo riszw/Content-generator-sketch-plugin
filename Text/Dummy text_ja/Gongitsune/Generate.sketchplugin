@@ -2,4 +2,4 @@
 #import '../js/loadText.js'
 #import '../data/text/japan/gongitsune.js'
 
-loadText(data);
+loadText(data, 'fillerati text');
