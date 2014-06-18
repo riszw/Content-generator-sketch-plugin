@@ -3,13 +3,13 @@ function timeSince(timeStamp) {
         secondsPast = (now.getTime() - timeStamp.getTime()) / 1000;
 
     if(secondsPast < 60){
-        return parseInt(secondsPast) + 's';
+        return parseInt(secondsPast) + '秒';
     }
     if(secondsPast < 3600){
-        return parseInt(secondsPast/60) + 'm';
+        return parseInt(secondsPast/60) + '分';
     }
     if(secondsPast <= 86400){
-        return parseInt(secondsPast/3600) + 'h';
+        return parseInt(secondsPast/3600) + '時間';
     }
     if(secondsPast > 86400){
           day = timeStamp.getDate() + "日";
