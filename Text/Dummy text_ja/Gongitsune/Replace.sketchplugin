@@ -2,4 +2,4 @@
 #import '../js/replaceTextFitting_ja.js'
 #import '../data/text/japan/gongitsune.js'
 
-loadText(data);
+loadText(data, 'gongitsune text');
