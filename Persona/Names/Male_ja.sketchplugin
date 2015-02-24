@@ -1,6 +1,6 @@
-#import '../js/utility.js'
-#import '../js/loadNames.js'
-#import '../data/names/names.js'
+#import '../../js/utility.js'
+#import '../../js/loadNames.js'
+#import '../../data/names/names.js'
 
 firstNames = data[15][1];
 lastNames = data[15][3];

@@ -1,5 +1,5 @@
-#import '../js/utility.js'
-#import '../js/loadText.js'
-#import '../data/text/japan/kumonoito.js'
+#import '../../../js/utility.js'
+#import '../../../js/loadText.js'
+#import '../../../data/text/japan/kumonoito.js'
 
-loadText(data, 'kumonoito text');
+loadText(data);

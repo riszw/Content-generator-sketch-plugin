@@ -1,4 +1,4 @@
-var alertMessage = "Example: 'Price [0-20]$ [old,new]'";
+var alertMessage = "入力例: '価格 [500-1500]円 [新,旧]'";
 
 var inputString = [doc askForUserInput:alertMessage initialValue:""];
 

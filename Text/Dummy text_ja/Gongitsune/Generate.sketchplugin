@@ -1,5 +1,5 @@
-#import '../js/utility.js'
-#import '../js/loadText.js'
-#import '../data/text/japan/gongitsune.js'
+#import '../../../js/utility.js'
+#import '../../../js/loadText.js'
+#import '../../../data/text/japan/gongitsune.js'
 
-loadText(data, 'fillerati text');
+loadText(data);

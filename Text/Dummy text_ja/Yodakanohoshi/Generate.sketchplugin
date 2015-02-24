@@ -1,5 +1,5 @@
-#import '../js/utility.js'
-#import '../js/loadText.js'
-#import '../data/text/japan/yodakanohoshi.js'
+#import '../../../js/utility.js'
+#import '../../../js/loadText.js'
+#import '../../../data/text/japan/yodakanohoshi.js'
 
-loadText(data, 'yodakanohoshi text');
+loadText(data);
