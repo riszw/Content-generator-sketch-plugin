@@ -1,0 +1,7 @@
+#import '../../js/utility.js'
+#import '../../js/loadNames.js'
+#import '../../data/names/names.js'
+
+firstNames = data[15][1].concat(data[15][2]);
+lastNames = data[15][3];
+loadText(lastNames, firstNames);
