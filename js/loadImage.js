@@ -11,19 +11,13 @@ var loadImages = function(dataPath, groupName, pictureName){
 			var pluginFolder = scriptPath.match(/Plugins\/([\w -])*/)[0] + "/";
 			var sketchPluginsPath = scriptPath.replace(/Plugins([\w \/ -])*.sketchplugin$/, "");
 			imagesPath =  sketchPluginsPath + pluginFolder + dataPath;
-		}
-		if(tools.majorVersion() == 2){						
-			userFolder = [fileManager URLsForDirectory:NSLibraryDirectory inDomains:NSUserDomainMask],
-			imagesPath = [[userFolder objectAtIndex:0] absoluteString] + "Application Support/com.bohemiancoding.sketch3/Plugins/avatars/";			
-			imagesPath = imagesPath.replace("file://","");	
-		}
-		
+		}	
 		log(imagesPath)
 		var imagesFileNames = [fileManager contentsOfDirectoryAtPath:imagesPath error:nil],
 			imgLen = [imagesFileNames count];
 
 		for(var i = 0; i < imgAmount; i++){
-			var r = Math.ceil(Math.random() * imgLen);
+			var r = Math.floor(Math.random() * imgLen);
 			var fileName = imagesPath+imagesFileNames[r];
 			if ([fileManager fileExistsAtPath: fileName]) {				
 				var newImage = [[NSImage alloc] initWithContentsOfFile:fileName];			
@@ -42,13 +36,21 @@ var loadImages = function(dataPath, groupName, pictureName){
 			var layer = selection[i];
             if([layer class] == MSShapeGroup){
                 var image = imagesCollection[i];
-                layer.style().fills().firstObject().setFillType(4);
-                layer.style().fills().firstObject().setPatternImage( image );
+                var fill = layer.style().fills().firstObject();
+                fill.setFillType(4);                
+                log(tools.minorVersion())
+                if(tools.minorVersion() >= 1){
+                	var coll = layer.style().fills().firstObject().documentData().images();              
+                	[fill setPatternImage:image collection:coll]
+                }
+                else{
+                	layer.style().fills().firstObject().setPatternImage( image );
+                }                                                
                 layer.style().fills().firstObject().setPatternFillType(1);
             }
 		}
 
-		if([selection count] == 0) alert('Select at least one thumbnail group or a vector shape');
+		if([selection count] == 0) alert('Select at least one vector shape');
 	}
 	main();
 }
